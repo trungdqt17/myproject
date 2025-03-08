@@ -1,35 +1,22 @@
-CREATE TABLE room(
-    room_number INT PRIMARY KEY,
-    room_type VARCHAR(15),
-    capacity INT,
-    available BOOLEAN
-)
+USE dthanh01;
+CREATE TABLE hotels (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    location VARCHAR(255) NOT NULL,
+    rating FLOAT
+);
 
-CREATE TABLE CLIENT(
-    id_client INT PRIMARY KEY,
-    name_client VARCHAR(30),
-    addrress_client VARCHAR(50),
-    phone VARCHAR(15),
-    email VARCHAR(25),
-    nationality VARCHAR(20),
-)
-
-CREATE TABLE BOOKING(
-    id_order INT PRIMARY KEY,
-    room_num INT FOREIGN KEY REFERENCES  room(ROOM_NUM),
-    ID_CLIENT INT FOREIGN KEY REFERENCES CLIENT(ID_CLIENT),
-    TIME_ORDER TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    CHECK_IN TIMESTAMP,
-    CHECK_OUT TIMESTAMP 
-)
-
-CREATE TABLE BILL(
-    ID_BILL INT PRIMARY KEY,
-    DATE_BILL TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    TOTAL_PRICE INT,
-)
-
-CREATE TABLE SERVICES(
-    ID_SERVICES INT,
-
-)
+CREATE TABLE rooms (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    hotel_id INT,
+    room_number INT NOT NULL,
+    type VARCHAR(100) NOT NULL,
+    price_per_night DECIMAL(10,2) NOT NULL,
+    FOREIGN KEY (hotel_id) REFERENCES hotels(id)
+);
+CREATE TABLE services (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    room_id INT,
+    service_name VARCHAR(255),
+    FOREIGN KEY (room_id) REFERENCES rooms(id)
+);

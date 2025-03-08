@@ -3,15 +3,15 @@ import mysql.connector
 
 # Kết nối MySQL
 conn = mysql.connector.connect(
-    host="localhost",
+    host="127.0.0.1",
     user="root",
-    password="password",
-    database="hotel_db"
+    password="170705170705",
+    database="dthanh01"
 )
 cursor = conn.cursor()
 
 # Đọc file JSON
-with open("hotels.json", "r", encoding="utf-8") as file:
+with open("db.json", "r", encoding="utf-8") as file:
     data = json.load(file)
 
 # Chèn dữ liệu vào MySQL
