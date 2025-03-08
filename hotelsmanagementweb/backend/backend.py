@@ -5,20 +5,20 @@ import mysql.connector
 conn = mysql.connector.connect(
     host="127.0.0.1",
     user="root",
-    password="170705170705",
+    password="170705",
     database="dthanh01"
 )
 cursor = conn.cursor()
 
 # Đọc file JSON
-with open("db.json", "r", encoding="utf-8") as file:
+with open("D:\\Newfolder\\myproject\\hotelsmanagementweb\\database\\db.json", "r", encoding="utf-8") as file:
     data = json.load(file)
 
 # Chèn dữ liệu vào MySQL
 for hotel in data["hotels"]:
     cursor.execute(
         "INSERT INTO hotels (name, location, rating) VALUES (%s, %s, %s)",
-        (hotel["name"], hotel["location"], hotel["rating"])
+        (hotel["hotelName"], hotel["address"], hotel["rating"])
     )
     hotel_id = cursor.lastrowid  # Lấy ID khách sạn vừa thêm
 
