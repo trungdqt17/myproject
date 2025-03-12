@@ -1,0 +1,123 @@
+/* css cho những thành phần riêng */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ccc; /* Đường kẻ ngang */
+    margin: 20px 0;
+}
+
+.nav{
+    padding:0 20px;
+}
+
+.text-content{
+    max-width: 50%
+}
+
+.nav__container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%
+}
+
+.nav__list{
+    list-style:none;
+    font-size: 14px;
+    display: flex;
+    gap: 20px;
+}
+
+.nav__logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #1E40AF;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0;
+    gap: 100px;
+}
+
+.hero__container {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.hero__image{
+    flex:1;
+    text-align: right;
+}
+
+.hero__img{
+    width: 200px;
+    border-radius:15px;
+    height: auto;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.stats__container {
+    display: flex;
+    gap: 50px;
+}
+
+.stats__item {
+    font-size: 16px;
+    color: #333;
+}
+
+.stats__number {
+    font-weight: bold;
+    font-size: 22px;
+    color: #1E40AF;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    background: #E5E7EB;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.search__container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.search__item {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn--search {
+    background: #1E40AF;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}

@@ -36,7 +36,7 @@ INSERT INTO hotels (id, hotel_name, address, rating, phone_number) VALUES
 ('HT001', 'Golden Lotus Hotel', '28 Trần Phú, Nha Trang, Khánh Hòa', 4.5, '0258 3812 345'),
 ('HT002', 'Hanoi Paradise Hotel', '15 Hàng Gai, Hoàn Kiếm, Hà Nội', 4.2, '024 3926 4789'),
 ('HT003', 'Saigon Emerald Resort', '568 Nguyễn Tất Thành, Quận 4, TP. Hồ Chí Minh', 4.8, '028 3843 9201'),
-('HT004', 'Đà Lạt Pine Valley', '42 Đường Trần Hưng Đạo, Phường 10, Đà Lạt', 4.3, '0263 3822 456'),
+('HT004', 'Đà Lạt Pine Valley', '42 Đường Trần Hưng Đạo, Phường 10, Đà Lạt', 4.3, '0263 3822 456'), 
 ('HT005', 'Mekong Riverside Hotel', '156 Đường 30/4, Ninh Kiều, Cần Thơ', 4.0, '0292 3819 777'),
 ('HT006', 'Cát Bà Island Resort', 'Đường Bãi Cát, Cát Bà, Hải Phòng', 4.4, '0225 3887 123'),
 ('HT007', 'Phú Quốc Pearl Resort', 'Bãi Dài, Gành Dầu, Phú Quốc, Kiên Giang', 4.9, '0297 3981 555'),
@@ -135,75 +135,75 @@ INSERT INTO room_services (room_id, hotel_id, service_name) VALUES
 
 -- Continue for all other rooms...
 -- For brevity, I've included just a few examples of service insertions
--- In a real implementation, you would add all services for all rooms
+-- -- In a real implementation, you would add all services for all rooms
 
--- Create stored procedures for common operations
-DELIMITER //
+-- -- Create stored procedures for common operations
+-- DELIMITER //
 
--- Get hotel by ID with its rooms
-CREATE PROCEDURE GetHotelWithRooms(IN hotelId VARCHAR(10))
-BEGIN
-    SELECT h.*, r.id AS room_id, r.room_type, r.price, r.available_rooms
-    FROM hotels h
-    JOIN rooms r ON h.id = r.hotel_id
-    WHERE h.id = hotelId;
+-- -- Get hotel by ID with its rooms
+-- CREATE PROCEDURE GetHotelWithRooms(IN hotelId VARCHAR(10))
+-- BEGIN
+--     SELECT h.*, r.id AS room_id, r.room_type, r.price, r.available_rooms
+--     FROM hotels h
+--     JOIN rooms r ON h.id = r.hotel_id
+--     WHERE h.id = hotelId;
     
-    SELECT rs.service_name
-    FROM room_services rs
-    WHERE rs.hotel_id = hotelId
-    ORDER BY rs.room_id;
-END //
+--     SELECT rs.service_name
+--     FROM room_services rs
+--     WHERE rs.hotel_id = hotelId
+--     ORDER BY rs.room_id;
+-- END //
 
--- Get available rooms by price range
-CREATE PROCEDURE GetRoomsByPriceRange(IN minPrice DECIMAL(10,2), IN maxPrice DECIMAL(10,2))
-BEGIN
-    SELECT h.id AS hotel_id, h.hotel_name, h.address, h.rating, 
-           r.id AS room_id, r.room_type, r.price, r.available_rooms
-    FROM hotels h
-    JOIN rooms r ON h.id = r.hotel_id
-    WHERE r.price BETWEEN minPrice AND maxPrice
-    ORDER BY r.price;
-END //
+-- -- Get available rooms by price range
+-- CREATE PROCEDURE GetRoomsByPriceRange(IN minPrice DECIMAL(10,2), IN maxPrice DECIMAL(10,2))
+-- BEGIN
+--     SELECT h.id AS hotel_id, h.hotel_name, h.address, h.rating, 
+--            r.id AS room_id, r.room_type, r.price, r.available_rooms
+--     FROM hotels h
+--     JOIN rooms r ON h.id = r.hotel_id
+--     WHERE r.price BETWEEN minPrice AND maxPrice
+--     ORDER BY r.price;
+-- END //
 
--- Search hotels by name
-CREATE PROCEDURE SearchHotels(IN searchTerm VARCHAR(100))
-BEGIN
-    SELECT * FROM hotels
-    WHERE hotel_name LIKE CONCAT('%', searchTerm, '%')
-    ORDER BY rating DESC;
-END //
+-- -- Search hotels by name
+-- CREATE PROCEDURE SearchHotels(IN searchTerm VARCHAR(100))
+-- BEGIN
+--     SELECT * FROM hotels
+--     WHERE hotel_name LIKE CONCAT('%', searchTerm, '%')
+--     ORDER BY rating DESC;
+-- END //
 
--- Book a room
-CREATE PROCEDURE BookRoom(
-    IN hotelId VARCHAR(10),
-    IN roomId VARCHAR(10),
-    IN numberOfRooms INT,
-    OUT success BOOLEAN,
-    OUT message VARCHAR(255)
-)
-BEGIN
-    DECLARE available INT;
+-- -- Book a room
+-- CREATE PROCEDURE BookRoom(
+--     IN hotelId VARCHAR(10),
+--     IN roomId VARCHAR(10),
+--     IN numberOfRooms INT,
+--     OUT success BOOLEAN,
+--     OUT message VARCHAR(255)
+-- )
+-- BEGIN
+--     DECLARE available INT;
     
-    -- Check if room exists and has enough availability
-    SELECT available_rooms INTO available
-    FROM rooms
-    WHERE id = roomId AND hotel_id = hotelId;
+--     -- Check if room exists and has enough availability
+--     SELECT available_rooms INTO available
+--     FROM rooms
+--     WHERE id = roomId AND hotel_id = hotelId;
     
-    IF available IS NULL THEN
-        SET success = FALSE;
-        SET message = 'Room not found';
-    ELSEIF available < numberOfRooms THEN
-        SET success = FALSE;
-        SET message = 'Not enough rooms available';
-    ELSE
-        -- Update available rooms
-        UPDATE rooms
-        SET available_rooms = available_rooms - numberOfRooms
-        WHERE id = roomId AND hotel_id = hotelId;
+--     IF available IS NULL THEN
+--         SET success = FALSE;
+--         SET message = 'Room not found';
+--     ELSEIF available < numberOfRooms THEN
+--         SET success = FALSE;
+--         SET message = 'Not enough rooms available';
+--     ELSE
+--         -- Update available rooms
+--         UPDATE rooms
+--         SET available_rooms = available_rooms - numberOfRooms
+--         WHERE id = roomId AND hotel_id = hotelId;
         
-        SET success = TRUE;
-        SET message = 'Booking successful';
-    END IF;
-END //
+--         SET success = TRUE;
+--         SET message = 'Booking successful';
+--     END IF;
+-- END //
 
-DELIMITER ;
+-- DELIMITER ;
