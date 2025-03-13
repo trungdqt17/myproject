@@ -17,8 +17,8 @@ with open("D:\\Newfolder\\myproject\\hotelsmanagementweb\\database\\db.json", "r
 # Chèn dữ liệu vào MySQL
 for hotel in data["hotels"]:
     cursor.execute(
-        "INSERT INTO hotels (name, location, rating) VALUES (%s, %s, %s)",
-        (hotel["hotelName"], hotel["address"], hotel["rating"])
+        "INSERT INTO hotels (hotel_name, address_hotel, rating) VALUES (%s, %s, %s)",
+        (hotel["hotel_name"], hotel["address_hotel"], hotel["rating"])
     )
     hotel_id = cursor.lastrowid  # Lấy ID khách sạn vừa thêm
 

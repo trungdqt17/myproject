@@ -1,302 +1,302 @@
 {
     "hotels": [
       {
-        "hoetl_id": "HT001",
-        "hotel_name": "Golden Lotus Hotel",
-        "address": "28 Trần Phú, Nha Trang, Khánh Hòa",
+        "id": "HT001",
+        "hotel_name": "Golden Lotus Hotel", 
+        "address_hotel": "28 Trần Phú, Nha Trang, Khánh Hòa",
         "rating": 4.5,
-        "phoneNumber": "0258 3812 345",
+        "tel": "0258 3812 345",
         "rooms": [
           {
             "id": "GL-STD",
-            "roomType": "Phòng Tiêu Chuẩn",
+            "roomType": "Standard",
             "price": 850000,
             "availableRooms": 6,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast"]
           },
           {
             "id": "GL-DLX",
-            "roomType": "Phòng Deluxe",
+            "roomType": "Deluxe",
             "price": 1200000,
             "availableRooms": 4,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí", "Ban công view biển"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast", "Sea-view Balcony"]
           },
           {
             "id": "GL-SUT",
-            "roomType": "Phòng Suite",
+            "roomType": "Suite",
             "price": 1800000,
             "availableRooms": 8,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí", "Ban công view biển", "Phòng khách riêng", "Bồn tắm spa"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast", "Sea-view Balcony", "Private Living Room", "Spa Bathtub"]
           }
         ]
       },
       {
         "id": "HT002",
         "hotel_name": "Hanoi Paradise Hotel",
-        "address": "15 Hàng Gai, Hoàn Kiếm, Hà Nội",
+        "address_hotel": "15 Hàng Gai, Hoàn Kiếm, Hà Nội",
         "rating": 4.2,
-        "phoneNumber": "024 3926 4789",
+        "tel": "024 3926 4789",
         "rooms": [
           {
             "id": "HP-SUP",
-            "roomType": "Phòng Superior",
+            "roomType": "Superior",
             "price": 780000,
             "availableRooms": 3,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast"]
           },
           {
             "id": "HP-PRE",
-            "roomType": "Phòng Premier",
+            "roomType": "Premier",
             "price": 1100000,
             "availableRooms": 7,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí", "Giường King size"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast", "King-size Bed"]
           },
           {
             "id": "HP-EXC",
-            "roomType": "Phòng Executive",
+            "roomType": "Executive",
             "price": 1650000,
             "availableRooms": 5,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí", "Giường King size", "Dịch vụ đón sân bay", "Phòng tắm cao cấp"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast", "King-size Bed", "Airport Shuttle Service", "Luxury Bathroom"]
           }
         ]
       },
       {
         "id": "HT003",
         "hotel_name": "Saigon Emerald Resort",
-        "address": "568 Nguyễn Tất Thành, Quận 4, TP. Hồ Chí Minh",
+        "address_hotel": "568 Nguyễn Tất Thành, Quận 4, TP. Hồ Chí Minh",
         "rating": 4.8,
-        "phoneNumber": "028 3843 9201",
+        "tel": "028 3843 9201",
         "rooms": [
           {
             "id": "SER-GDN",
-            "roomType": "Phòng Garden View",
+            "roomType": "Garden View",
             "price": 1050000,
             "availableRooms": 8,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí", "View vườn"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast", "Garden View"]
           },
           {
             "id": "SER-OCN",
-            "roomType": "Phòng Ocean View",
+            "roomType": "Ocean View",
             "price": 1450000,
             "availableRooms": 2,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí", "View biển", "Dịch vụ dọn phòng 2 lần/ngày"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast", "Sea View", "Twice-daily Housekeeping Service"]
           },
           {
             "id": "SER-VIL",
             "roomType": "Villa Pool Access",
             "price": 2800000,
             "availableRooms": 4,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí", "Hồ bơi riêng", "Phòng spa riêng", "Dịch vụ quản gia"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast", "Private Pool", "Private Spa Room", "Butler Service"]
           }
         ]
       },
       {
         "id": "HT004",
         "hotel_name": "Đà Lạt Pine Valley",
-        "address": "42 Đường Trần Hưng Đạo, Phường 10, Đà Lạt",
+        "address_hotel": "42 Đường Trần Hưng Đạo, Phường 10, Đà Lạt",
         "rating": 4.3,
-        "phoneNumber": "0263 3822 456",
+        "tel": "0263 3822 456",
         "rooms": [
           {
             "id": "DPV-STD",
-            "roomType": "Phòng Tiêu Chuẩn",
+            "roomType": "Standard",
             "price": 650000,
             "availableRooms": 5,
-            "services": ["Wi-Fi miễn phí", "Máy sưởi", "TV LED", "Ấm đun nước", "Bữa sáng miễn phí"]
+            "services": ["Free Wi-Fi", "Heater", "TV LED", "Electric Kettle", "Free Breakfast"]
           },
           {
             "id": "DPV-BNG",
-            "roomType": "Phòng Bungalow",
+            "roomType": "Bungalow",
             "price": 1200000,
             "availableRooms": 7,
-            "services": ["Wi-Fi miễn phí", "Máy sưởi", "TV LED", "Minibar", "Bữa sáng miễn phí", "Lò sưởi", "Sân vườn riêng"]
+            "services": ["Free Wi-Fi", "Heater", "TV LED", "Minibar", "Free Breakfast", "Fireplace", "Private Garden"]
           },
           {
             "id": "DPV-CBIN",
-            "roomType": "Cabin Gỗ",
+            "roomType": "Cabin",
             "price": 1500000,
             "availableRooms": 3,
-            "services": ["Wi-Fi miễn phí", "Máy sưởi", "TV LED", "Minibar", "Bữa sáng miễn phí", "Lò sưởi", "BBQ ngoài trời", "View núi"]
+            "services": ["Free Wi-Fi", "Heater", "TV LED", "Minibar", "Free Breakfast", "Fireplace", "Outdoor BBQ", "Mountain View"]
           }
         ]
       },
       {
         "id": "HT005",
         "hotel_name": "Mekong Riverside Hotel",
-        "address": "156 Đường 30/4, Ninh Kiều, Cần Thơ",
+        "address_hotel": "156 Đường 30/4, Ninh Kiều, Cần Thơ",
         "rating": 4.0,
-        "phoneNumber": "0292 3819 777",
+        "tel": "0292 3819 777",
         "rooms": [
           {
             "id": "MRH-RIV",
-            "roomType": "Phòng River View",
+            "roomType": "River View",
             "price": 750000,
             "availableRooms": 6,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí", "View sông"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast", "River View"]
           },
           {
             "id": "MRH-FAM",
-            "roomType": "Phòng Gia Đình",
+            "roomType": "Family Room",
             "price": 1050000,
             "availableRooms": 8,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí", "View sông", "2 giường đôi"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast", "River View", "Two Double Beds"]
           },
           {
             "id": "MRH-PENT",
             "roomType": "Penthouse",
             "price": 1950000,
             "availableRooms": 2,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí", "View toàn cảnh", "Phòng khách riêng", "Bàn làm việc", "Dịch vụ đưa đón"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast", "Panoramic View", "Private Living Room", "Work desk", "Shuttle Service"]
           }
         ]
       },
       {
         "id": "HT006",
         "hotel_name": "Cát Bà Island Resort",
-        "address": "Đường Bãi Cát, Cát Bà, Hải Phòng",
+        "address_hotel": "Đường Bãi Cát, Cát Bà, Hải Phòng",
         "rating": 4.4,
-        "phoneNumber": "0225 3887 123",
+        "tel": "0225 3887 123",
         "rooms": [
           {
             "id": "CB-BUNG",
             "roomType": "Bungalow",
             "price": 1250000,
             "availableRooms": 3,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí", "Gần bãi biển"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast", "Near The Beach"]
           },
           {
             "id": "CB-BCHF",
             "roomType": "Beach Front Villa",
             "price": 2500000,
             "availableRooms": 5,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí", "Trực tiếp ra biển", "Hồ bơi mini"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast", "Direct Beach Access", "Mini Pool"]
           },
           {
             "id": "CB-OVWT",
             "roomType": "Overwater Bungalow",
             "price": 3800000,
             "availableRooms": 2,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí", "Trực tiếp trên mặt nước", "Sàn kính", "Dịch vụ spa"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast", "Overwater", "Glass Floor", "Spa Service"]
           }
         ]
       },
       {
         "id": "HT007",
         "hotel_name": "Phú Quốc Pearl Resort",
-        "address": "Bãi Dài, Gành Dầu, Phú Quốc, Kiên Giang",
+        "address_hotel": "Bãi Dài, Gành Dầu, Phú Quốc, Kiên Giang",
         "rating": 4.9,
-        "phoneNumber": "0297 3981 555",
+        "tel": "0297 3981 555",
         "rooms": [
           {
             "id": "PQP-DLX",
-            "roomType": "Phòng Deluxe",
+            "roomType": "Deluxe",
             "price": 1450000,
             "availableRooms": 4,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí", "Ban công"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast", "Balcony"]
           },
           {
             "id": "PQP-PRVP",
             "roomType": "Private Pool Villa",
             "price": 3200000,
             "availableRooms": 6,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí", "Hồ bơi riêng", "Quầy bar mini"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast", "Private Pool", "Mini Bar"]
           },
           {
             "id": "PQP-PRSV",
             "roomType": "Presidential Villa",
             "price": 5500000,
             "availableRooms": 1,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí", "Hồ bơi riêng", "Đầu bếp riêng", "Quản gia 24/7", "Xe đưa đón sân bay"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast", "Private Pool", "Private Chef", "24/7 Butler Service", "Airport Shuttle"]
           }
         ]
       },
       {
         "id": "HT008",
         "hotel_name": "Sapa Mountain View Hotel",
-        "address": "15 Thạch Sơn, Sapa, Lào Cai",
+        "address_hotel": "15 Thạch Sơn, Sapa, Lào Cai",
         "rating": 4.1,
-        "phoneNumber": "0214 3871 234",
+        "tel": "0214 3871 234",
         "rooms": [
           {
             "id": "SMV-STD",
-            "roomType": "Phòng Tiêu Chuẩn",
+            "roomType": "Standard",
             "price": 550000,
             "availableRooms": 7,
-            "services": ["Wi-Fi miễn phí", "Máy sưởi", "TV LED", "Ấm đun nước", "Bữa sáng miễn phí"]
+            "services": ["Free Wi-Fi", "Heater", "TV LED", "Electric Kettle", "Free Breakfast"]
           },
           {
             "id": "SMV-MTN",
-            "roomType": "Phòng Mountain View",
+            "roomType": "Mountain View",
             "price": 850000,
             "availableRooms": 3,
-            "services": ["Wi-Fi miễn phí", "Máy sưởi", "TV LED", "Minibar", "Bữa sáng miễn phí", "View núi Fansipan"]
+            "services": ["Free Wi-Fi", "Heater", "TV LED", "Minibar", "Free Breakfast", "Mountain View Fansipan"]
           },
           {
             "id": "SMV-HMST",
             "roomType": "Homestay Suite",
             "price": 1200000,
             "availableRooms": 5,
-            "services": ["Wi-Fi miễn phí", "Máy sưởi", "TV LED", "Minibar", "Bữa sáng miễn phí", "Phòng tắm truyền thống", "Thiết kế dân tộc"]
+            "services": ["Free Wi-Fi", "Heater", "TV LED", "Minibar", "Free Breakfast", "Traditional Bathroom", "Traditional Ethnic Design"]
           }
         ]
       },
       {
         "id": "HT009",
         "hotel_name": "Hue Royal Palace Hotel",
-        "address": "5 Đường Lê Lợi, Phường Phú Hội, Huế",
+        "address_hotel": "5 Đường Lê Lợi, Phường Phú Hội, Huế",
         "rating": 4.6,
-        "phoneNumber": "0234 3822 999",
+        "tel": "0234 3822 999",
         "rooms": [
           {
             "id": "HRP-CLS",
-            "roomType": "Phòng Classic",
+            "roomType": "Classic",
             "price": 890000,
             "availableRooms": 4,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast"]
           },
           {
             "id": "HRP-IMP",
-            "roomType": "Phòng Imperial",
+            "roomType": "Imperial",
             "price": 1350000,
             "availableRooms": 8,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí", "View sông Hương", "Thiết kế cung đình"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast", "Huong River View", "Imperial Design"]
           },
           {
             "id": "HRP-KING",
             "roomType": "King's Chamber",
             "price": 2200000,
             "availableRooms": 3,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí", "View sông Hương", "Thiết kế hoàng gia", "Dịch vụ quản gia", "Dịch vụ xe riêng"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast", "Huong River View", "Royal Design", "Bulter Service", "Private Car Service"]
           }
         ]
       },
       {
         "id": "HT010",
         "hotel_name": "Hội An Riverside Lodge",
-        "address": "28 Nguyễn Du, Phường Minh An, Hội An, Quảng Nam",
+        "address_hotel": "28 Nguyễn Du, Phường Minh An, Hội An, Quảng Nam",
         "rating": 4.7,
-        "phoneNumber": "0235 3926 789",
+        "tel": "0235 3926 789",
         "rooms": [
           {
             "id": "HAR-TRD",
-            "roomType": "Phòng Truyền Thống",
+            "roomType": "Classic",
             "price": 950000,
             "availableRooms": 6,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí", "Thiết kế cổ điển"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast", "Classic Design"]
           },
           {
             "id": "HAR-RVST",
-            "roomType": "Phòng Riverside Studio",
+            "roomType": "Riverside Studio",
             "price": 1400000,
             "availableRooms": 5,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí", "View sông Thu Bồn", "Ban công riêng"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast", "Thu Bon River View", "Private Balcony"]
           },
           {
             "id": "HAR-LNTN",
             "roomType": "Lantern Suite",
             "price": 1900000,
             "availableRooms": 2,
-            "services": ["Wi-Fi miễn phí", "Máy lạnh", "TV LED", "Minibar", "Bữa sáng miễn phí", "View phố cổ", "Trang trí đèn lồng", "Phòng khách riêng", "Tour phố cổ miễn phí"]
+            "services": ["Free Wi-Fi", "Air Conditioner", "TV LED", "Minibar", "Free Breakfast", "Old Town View", "Latern Decoration", "Private Living Room", "Free Old Town Tour"]
           }
         ]
       }

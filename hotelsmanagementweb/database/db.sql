@@ -10,7 +10,7 @@ CREATE TABLE hotels{
 CREATE TABLE rooms{
     room_id INT PRIMARY KEY,
     room_type VARCHAR(10),
-    available INT,
+    availableRooms INT,
     hotel_id INT FOREIGN KEY REFERENCES hotels(hotel_id)
     price BIGINT,
 }
