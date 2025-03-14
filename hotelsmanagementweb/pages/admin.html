@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Admin page</title>
+		<link rel="stylesheet" href="../css/admin.css" />
+	</head>
+	<body>
+		<div class="sidebar">
+			<nav class="nav">
+				<a href="#bookings" class="nav-item"> Bookings </a>
+			</nav>
+		</div>
+
+		<div class="main">
+			<div class="content">
+				<div id="bookings-content">
+					<div class="content-header">
+						<h2 class="content-title">Booking List</h2>
+					</div>
+					<div class="table-container">
+						<table>
+							<thead>
+								<tr>
+									<th>Booking ID</th>
+									<th>Guest Name</th>
+									<th>Room Type</th>
+									<th>Check In</th>
+									<th>Check Out</th>
+									<th>Status</th>
+									<th>Amount</th>
+								</tr>
+							</thead>
+							<tbody id="bookings-list"></tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="../script/index.js" type="module"></script>
+	</body>
+</html>
