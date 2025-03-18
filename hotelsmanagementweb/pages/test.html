@@ -1,0 +1,161 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Information</title>
+    <link rel="stylesheet" type="text/css" href="../css/booking.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="steps">
+            <div class="step completed">✓</div>
+            <div class="step">2</div>
+            <div class="step">3</div>
+        </div>
+
+        <h2 class="title">Booking Information</h2>
+        <p class="subtitle">Please fill up the blank fields below</p>
+
+        <div class="content">
+            <div class="image-section">
+                <img src="https://source.unsplash.com/random/800x600/?hotel,resort" class="image">
+                <h3 class="image-title">Blue Origin Fams</h3>
+                <p class="location">Galle, Sri Lanka</p>
+            </div>
+
+            <div class="form-section">
+                <div class="form-group">
+                    <label>How long you will stay?</label>
+                    <div class="input-group">
+                        <button class="btn minus">-</button>
+                        <input type="text" value="2 Days" readonly>
+                        <button class="btn plus">+</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Pick a Date</label>
+                    <input type="text" value="20 Jan - 22 Jan" readonly>
+                </div>
+
+                <div class="payment-info">
+                    You will pay <strong>$400 USD</strong><br>
+                    per <strong>2 Days</strong>
+                </div>
+
+                <button class="btn book">Book Now</button>
+                <button class="btn cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LankaStay - Booking</title>
+    <link rel="stylesheet" type="text/css" href="../css/booking.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__logo">Lanka<span class="header__logo--bold">Stay.</span></div>
+        <div class="header__line"></div>
+    </header>
+
+    <main class="booking">
+        <div class="booking__container">
+            <h2 class="booking__title">Booking Information</h2>
+            <p class="booking__subtitle">Please fill up the blank fields below</p>
+
+            <div class="booking__content">
+                <div class="booking__image">
+                    <img src="resort.jpg" alt="Blue Origin Fams">
+                    <p class="booking__location">Blue Origin Fams <br> Galle, Sri Lanka</p>
+                </div>
+
+                <div class="booking__form">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" class="input" placeholder="Enter your name">
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" class="input" placeholder="Enter your phone number">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" class="input" placeholder="Enter your email">
+
+                    <label for="country">Nationality:</label>
+                    <input type="text" id="country" class="input" placeholder="Enter your nationality">
+                    
+                    <div class="booking__days">
+                        <label>How long will you stay?</label>
+                        <div class="booking__counter">
+                            <button id="decrease" class="button">-</button>
+                            <span id="days">2</span> Days
+                            <button id="increase" class="button">+</button>
+                        </div>
+                    </div>
+
+                    <div class="booking__date">
+                        <label>Pick a Date</label>
+                        <input type="date" id="startDate" class="input">
+                    </div>
+
+                    <p class="booking__price">
+                        You will pay <strong id="totalPrice">$400 USD</strong> per <span id="totalDays">2 Days</span>
+                    </p>
+
+                    <button class="button button--primary" id="bookNow">Book Now</button>
+                    <button class="button button--secondary">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let days = 2;
+            const pricePerDay = 200; // Giá 1 ngày là 200 USD
+
+            const daysElement = document.getElementById("days");
+            const totalDaysElement = document.getElementById("totalDays");
+            const totalPriceElement = document.getElementById("totalPrice");
+
+            document.getElementById("increase").addEventListener("click", function () {
+                days++;
+                updateBookingInfo();
+            });
+
+            document.getElementById("decrease").addEventListener("click", function () {
+                if (days > 1) {
+                    days--;
+                    updateBookingInfo();
+                }
+            });
+
+            document.getElementById("startDate").addEventListener("change", function (event) {
+                const startDate = new Date(event.target.value);
+                if (!isNaN(startDate.getTime())) {
+                    const endDate = new Date(startDate);
+                    endDate.setDate(startDate.getDate() + days);
+                    document.getElementById("totalDays").innerText = `${days} Days`;
+                }
+            });
+
+            function updateBookingInfo() {
+                daysElement.innerText = days;
+                totalDaysElement.innerText = `${days} Days`;
+                totalPriceElement.innerHTML = `$${days * pricePerDay} USD`;
+            }
+        });
+    </script>
+
+</body>
+</html>
