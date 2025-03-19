@@ -10,6 +10,10 @@ body {
   text-align: center;
 }
 
+h1 {
+  margin: 0;
+}
+
 /* Header */
 .logo-light {
   color: #3366ff; /* Màu xanh sáng */
@@ -58,6 +62,8 @@ body {
   font-size: 36px;
   font-weight: bold;
   color: #152C5B;
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
 
 .booking__subtitle {
@@ -113,6 +119,7 @@ body {
   justify-content: space-between;
   border-radius: 5px;
   font-size: 16px;
+  align-items: center;
 }
 
 .icon {
@@ -130,6 +137,7 @@ body {
   background: #E74C3C;
   font-size: 24px;
 }
+
 
 .icon__btn--in{
   background: #1ABC9C;
@@ -166,6 +174,11 @@ body {
   height: 50px;
   opacity: 0.7;
   font-weight: 500px;
+}
+
+.buttons:hover{
+  transform: scale(1.1); /* Phóng to 10% khi hover */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Đổ bóng */
 }
 
 .booking__price {
