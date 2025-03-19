@@ -1,137 +1,43 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-  
-body {
-    text-align: center;
-}
-
-.header {
-    display:flex;
-} */
-
-/* Reset CSS */
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* Header */
-.header {
+.container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    background-color: white;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    gap: 12px;
+    height: 30vw;
 }
-
-.header__logo {
-    font-size: 24px;
-    font-weight: bold;
+.main {
+    flex: 1 1 60%;
+    height: 100%;
 }
-
-.header__link {
-    text-decoration: none;
-    color: #0044cc;
-}
-
-.header__nav {
-    display: flex;
-    gap: 20px;
-}
-
-.header__nav-link {
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-}
-
-.header__button {
-    background-color: #0044cc;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-/* Room Detail */
-.room-detail {
-    padding: 50px;
-    text-align: center;
-}
-
-.room-detail__title {
-    font-size: 28px;
-    color: #222;
-}
-
-.room-detail__location {
-    font-size: 18px;
-    color: gray;
-    margin-bottom: 20px;
-}
-
-.room-detail__gallery {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.room-detail__image {
-    width: 300px;
-    height: 200px;
+.main, .sub__top, .sub__bottom {
+    border-radius: 8px;
     object-fit: cover;
-    border-radius: 10px;
+    /* tránh méo hình */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main {
+    background-image: url('https://images.pexels.com/photos/31100834/pexels-photo-31100834/free-photo-of-cac-toa-nha-ki-n-truc-hi-n-d-i-copenhagen.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
 
-.room-detail__info {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.room-detail__description {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-.room-detail__price {
-    font-size: 24px;
-    font-weight: bold;
-    color: #28a745;
-}
-
-.room-detail__button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #0044cc;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-/* Amenities */
-.room-detail__amenities {
+.sub {
+    flex: 1 1 40%;
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
+    flex-direction: column;
+    gap: 12px;
 }
 
-.amenity {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.sub__top, .sub__bottom {
+    flex: 1;
 }
 
-.amenity__icon {
-    font-size: 20px;
-} */
+.sub__top {
+    background-image: url('https://images.pexels.com/photos/30907753/pexels-photo-30907753/free-photo-of-ph-lisbon-quy-n-ru-v-i-ki-n-truc-l-ch-s.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.sub__bottom {
+    background-image: url('https://images.pexels.com/photos/31100755/pexels-photo-31100755/free-photo-of-thi-t-k-ki-n-truc-hi-n-d-i-villefranche-sur-saone.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.about{
+    padding: 0 200px;
+}
