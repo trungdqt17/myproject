@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    gap: 12px;
+    height: 30vw;
+}
+.main {
+    flex: 1 1 60%;
+    height: 100%;
+}
+.main, .sub__top, .sub__bottom {
+    border-radius: 8px;
+    object-fit: cover;
+    /* tránh méo hình */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main {
+    background-image: url('https://images.pexels.com/photos/31100834/pexels-photo-31100834/free-photo-of-cac-toa-nha-ki-n-truc-hi-n-d-i-copenhagen.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.sub {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sub__top, .sub__bottom {
+    flex: 1;
+}
+
+.sub__top {
+    background-image: url('https://images.pexels.com/photos/30907753/pexels-photo-30907753/free-photo-of-ph-lisbon-quy-n-ru-v-i-ki-n-truc-l-ch-s.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.sub__bottom {
+    background-image: url('https://images.pexels.com/photos/31100755/pexels-photo-31100755/free-photo-of-thi-t-k-ki-n-truc-hi-n-d-i-villefranche-sur-saone.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.about{
+    padding: 0 200px;
+}
