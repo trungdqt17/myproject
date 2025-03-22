@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- dùng normalize để rest css -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>HaNoiBooking.</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <div class="logo">
+        <div class="overlay">
+            <h1 class="brand">
+                <span class="logo-light">HaNoi</span><span class="logo-bold">Booking.</span>
+            </h1>
+        </div>
+    </div>
+    <div class="form">
+        <h1 class="title" style="text-align: center;">Create Account</h1>
+        <label for="name">Full Name:</label>
+        <!-- thẻ label dùng để tạo nhãn cho 1 phần tử nhập liệu -->
+        <input type="text" id="name" class="input" placeholder="Enter your name">
+        <!-- id name để định danh cho ô nhập liệu liên kết với label qua for name -->
+        <!-- placeholder gợi ý mờ trong ô nhập -->
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" class="input" placeholder="Enter your number phone">
+
+        <label for="country">Nationality:</label>
+        <input type="text" id="country" class="input" placeholder="Enter your nationality">
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" class=" input" placeholder="Enter my email">
+
+        <label for="email">Username:</label>
+        <input type="text" id="username" class=" input" placeholder="Enter my username">
+
+        <label for="email">Password</label>
+        <input type="text" id="password" class=" input" placeholder="Enter my password">
+
+        <div class="btn-res" style="text-align: center;">
+            <button class="btn__res">Register</button>
+        </div>
+
+        <a class="login" href="../pages/login.html" style="text-align: center;">Login</a>
+    </div>
+</body>
+</html>
