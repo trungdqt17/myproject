@@ -1,57 +1,61 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-  
+
 body {
     text-align: center;
 }
 
-h1{
+h1 {
     margin: 0;
 }
 
 .header {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5px 200px;
     gap: clamp(10px, 5vw, 600px);
-} 
+}
 
-.header__nav{ 
-    list-style:none;
+.header__nav {
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     font-size: 16px;
 }
 
-.header__logo{
+.header__logo {
     margin: 0;
     /* align-items: center; */
 }
 
-.logo-light{
+.logo-light {
     color: #3366ff;
+    /* Màu xanh sáng */
     font-weight: 500;
+    /* Chữ nhẹ hơn Stay */
     font-size: 26px;
 }
 
-.logo-bold{
+/* "Stay" màu xanh đậm */
+.logo-bold {
     color: #1a2b50;
-    font-size:26px;
+    font-size: 26px;
+    /* Màu xanh đậm */
 }
 
-.header__line{
+.header__line {
     width: 100%;
     height: 1px;
     background: #ddd;
     margin-top: 5px;
 }
 
-.title{
+.title {
     display: flex;
     flex-direction: row;
     margin-left: 200px;
@@ -61,26 +65,26 @@ h1{
     align-items: center;
 }
 
-.title1{
+.title1 {
     font-size: 18px;
 }
 
-.title__home{
+.title__home {
     color: #B0B0B0;
 }
 
-.sign{
+.sign {
     color: #B0B0B0;
     margin: 0 20px;
 }
 
-.name__hotel{
+.name__hotel {
     margin-bottom: 10px;
     font-size: 36px;
     color: #152C5B;
 }
 
-.location{
+.location {
     color: #B0B0B0;
     font-size: 18px;
 }
@@ -88,7 +92,7 @@ h1{
 .image {
     display: flex;
     gap: 10px;
-    padding:0 200px;
+    padding: 0 200px;
     margin-top: 50px;
     height: 35vw;
 }
@@ -97,45 +101,48 @@ h1{
     flex: 1 1 60%;
 }
 
-.image__main, .image__sub-top, .image__sub-bottom{
+.image__main,
+.image__sub-top,
+.image__sub-bottom {
     border-radius: 10px;
     object-fit: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-} 
+}
 
-.image__main{
+.image__main {
     background-image: url(../assets/image/95980877.jpg)
 }
 
-.image__sub{
+.image__sub {
     flex: 1 1 40%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.image__sub-top, .image__sub-bottom{
-    flex:1 ;
+.image__sub-top,
+.image__sub-bottom {
+    flex: 1;
 }
 
-.image__sub-top{
+.image__sub-top {
     background-image: url(../assets/image/47f7772ed6ceff3f3692573e4ed96ed8.jpg);
 }
 
-.image__sub-bottom{
+.image__sub-bottom {
     background-image: url(../assets/image/dd62a1fa1b69e1e8532f238f259cf936.jpg);
 }
 
-.about{
+.about {
     padding: 0 200px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.about__place{
+.about__place {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -144,40 +151,41 @@ h1{
     margin-bottom: 50px;
 }
 
-.intro{
+.intro {
     flex: 1 1 60%;
 }
 
-.about__title{
+.about__title {
     font-size: 24px;
     color: #152C5B;
     margin-bottom: 20px;
     font-weight: 500;
 }
 
-.booknow{
+.booknow {
     flex: 1 1 40%
 }
 
-.p1, .p2{
+.p1,
+.p2 {
     font-size: 18px;
     color: #B0B0B0;
     padding-right: 100px;
 }
 
-.p1{
+.p1 {
     margin-bottom: 15px;
 }
 
-.booknow{
+.booknow {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display:flex;
+    display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.booknow__content{
+.booknow__content {
     font-size: 20px;
     font-weight: 500;
     color: #152C5B;
@@ -185,28 +193,30 @@ h1{
     margin-top: 20px;
 }
 
-.booknow__price{
+.booknow__price {
     padding-right: 120px;
     margin-top: 40px;
 }
 
 .price-bold {
-    color: #00FF7F; /* Màu xanh ngọc */
+    color: #00FF7F;
+    /* Màu xanh ngọc */
     font-size: 36px;
     font-weight: 500;
 }
 
 /* "per Day" */
 .content-light {
-    color: #B0B0B0; /* Màu xám nhạt */
+    color: #B0B0B0;
+    /* Màu xám nhạt */
     font-size: 32px;
     font-weight: 300;
     margin-left: 8px;
 }
 
-.booknow-btn{
+.booknow-btn {
     border-radius: 10px;
-    box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     font-size: 24px;
     width: 75%;
     color: white;
@@ -214,18 +224,20 @@ h1{
     border: none;
     cursor: pointer;
     align-self: center;
-    height:45px;
-    margin-top:50px;
+    height: 45px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.booknow-btn:hover{
+.booknow-btn:hover {
     background: green;
-    transform: scale(1.1); /* Phóng to 10% khi hover */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    transform: scale(1.1);
+    /* Phóng to 10% khi hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    /* Đổ bóng */
 }
 
-.service{
+.service {
     width: 100%;
     padding: 0;
     display: flex;
@@ -237,16 +249,16 @@ h1{
     color: #152C5B;
 }
 
-.icon{
+.icon {
     height: 20px;
     width: 20px;
 }
 
-.srv__name{
+.srv__name {
     white-space: nowrap;
 }
 
-.footer__line{
+.footer__line {
     width: 100%;
     height: 1px;
     background: #ddd;
@@ -254,46 +266,46 @@ h1{
     margin-bottom: 50px;
 }
 
-.footer{
+.footer {
     padding: 0 200px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 10px;  
+    gap: 10px;
     margin-bottom: 50px;
 }
 
-.footer__logo{
+.footer__logo {
     text-align: left;
     max-width: 30%;
 }
 
-.logo1{
+.logo1 {
     font-size: 26px;
 }
 
-.title__logo{
+.title__logo {
     font-size: 16px;
     color: #B0B0B0;
     font-weight: 250;
     margin-top: 10px;
 }
 
-.register{
-    display:flex;
+.register {
+    display: flex;
     flex-direction: column;
     text-align: left;
 }
 
-.title__res{
+.title__res {
     color: #152C5B;
     font-weight: 400;
     font-size: 18px;
 }
 
-.btn__register{
+.btn__register {
     border-radius: 10px;
-    box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     font-size: 20px;
     width: 75%;
     color: white;
@@ -301,10 +313,17 @@ h1{
     border: none;
     cursor: pointer;
     align-self: center;
-    height:45px;
-    margin-top:20px;
+    height: 45px;
+    margin-top: 20px;
 }
 
-.btn__register:hover{
+.btn__register:hover {
     transform: scale(0.8);
+}
+
+.header__line {
+    width: 100%;
+    height: 2px;
+    background: #dddddd;
+    margin-top: 10px;
 }

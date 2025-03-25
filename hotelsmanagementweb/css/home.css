@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+.header {
+    padding: 0px 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-light {
+    color: #3366ff;
+    /* Màu xanh sáng */
+    font-weight: 500;
+    /* Chữ nhẹ hơn Stay */
+    font-size: 26px;
+}
+
+/* "Stay" màu xanh đậm */
+.logo-bold {
+    color: #1a2b50;
+    font-size: 26px;
+    /* Màu xanh đậm */
+}
+
+.nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+li {
+    font-size: 16px;
+}
+
+.btn-login {
+    color: #FFFFFF;
+    background-color: #3252DF;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+}
+
+.header__line {
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+    margin-top: 10px;
+}
+
+.main {
+    margin-top: 50px;
+    display: flex;
+    padding: 0px 200px;
+    justify-content: space-between;
+}
+
+.slogan {
+    font-size: 42px;
+    font-weight: bold;
+    color: #152C5B;
+    width: 70%;
+}
+
+.main__image {
+    width: 50%;
+    height: 400px;
+    background-image: url(../assets/image/photo-1540541338287-41700207dee6.avif);
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
