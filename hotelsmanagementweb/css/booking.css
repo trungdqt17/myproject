@@ -78,7 +78,7 @@ h1 {
 }
 
 .booking__image img {
-  height: auto;
+  height: 80%;
   width: 50%;
   border-radius: 10px;
   /* margin-left:200px; */
@@ -216,4 +216,12 @@ h1 {
   /* Màu xanh đậm */
   font-weight: 700;
   /* Chữ đậm */
+}
+
+.booking__rooms {
+  padding-bottom: 20px;
+}
+
+.booking__date {
+  padding-bottom: 20px;
 }
