@@ -36,21 +36,13 @@
             </div>
 
             <div class="booking__form">
+
                 <div class="booking__days">
                     <label>How long will you stay?</label>
                     <div class="booking__counter">
-                        <button id="decreaseDays" class="icon icon__btn--de">-</button>
+                        <button id="decrease" class="icon icon__btn--de">-</button>
                         <span id="days">2</span> Days
-                        <button id="increaseDays" class="icon icon__btn--in">+</button>
-                    </div>
-                </div>
-
-                <div class="booking__rooms">
-                    <label>Number of Rooms:</label>
-                    <div class="booking__counter">
-                        <button id="decreaseRooms" class="icon icon__btn--de">-</button>
-                        <span id="rooms">1</span> Room
-                        <button id="increaseRooms" class="icon icon__btn--in">+</button>
+                        <button id="increase" class="icon icon__btn--in">+</button>
                     </div>
                 </div>
 
@@ -82,35 +74,21 @@
         // đảm bảo mã js chỉ chạy khi toàn bộ html đc tải xong
         document.addEventListener("DOMContentLoaded", function () {
             let days = 2;
-            let rooms = 1;
             const pricePerDay = 200;
 
             const daysElement = document.getElementById("days");
-            const roomsElement = document.getElementById("rooms");
             // lấy phần tử HTML có id là day trả về đối tượng DOMDOM                
             const totalDaysElement = document.getElementById("totalDays");
             const totalPriceElement = document.getElementById("totalPrice");
 
-            document.getElementById("increaseDays").addEventListener("click", function () {
+            document.getElementById("increase").addEventListener("click", function () {
                 days++;
                 updateBookingInfo();
             });
 
-            document.getElementById("decreaseDays").addEventListener("click", function () {
+            document.getElementById("decrease").addEventListener("click", function () {
                 if (days > 1) {
                     days--;
-                    updateBookingInfo();
-                }
-            });
-
-            document.getElementById("increaseRooms").addEventListener("click", function () {
-                rooms++;
-                updateBookingInfo();
-            });
-
-            document.getElementById("decreaseRooms").addEventListener("click", function () {
-                if (rooms > 1) {
-                    rooms--;
                     updateBookingInfo();
                 }
             });
@@ -121,15 +99,14 @@
                 if (!isNaN(startDate.getTime())) {
                     const endDate = new Date(startDate);
                     endDate.setDate(startDate.getDate() + days);
-                    updateBookingInfo();
+                    documnet.getElementById("totalDays").innerText = `${days} Days`;
                 }
             });
 
             function updateBookingInfo() {
                 daysElement.innerText = days;
-                roomsElement.innerText = rooms;
                 totalDaysElement.innerText = `${days} Days`;
-                totalPriceElement.innerHTML = `$${days * rooms * pricePerDay} USD`;
+                totalPriceElement.innerHTML = `$${days * pricePerDay} USD`;
             }
         });
     </script>
